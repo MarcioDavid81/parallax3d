@@ -14,7 +14,46 @@
     <title>Parallax 3D</title>
 </head>
 <body>
-    <div class="hero">
+
+    <header id="header" class="js-menu">
+        <div class="container">
+            <section class="logo">
+                <a href="#inicio">POINTER <span>Tecnologia</span></a>
+            </section>
+            
+            <section class="menu-desktop">
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Quem Somos</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="btn-contato">
+                <a href="#"><button>Contato</button></a>
+            </section>
+
+            <div class="btn-menu-mob" id="btn-menu-mob">
+                <div class="line-menu-mob-1"></div>
+                <div class="line-menu-mob-2"></div>
+            </div>
+            <section class="menu-mobile" id="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+        </div>
+    </header>
+
+    <section class="hero">
         <div class="container">
             <div class="images">
                 <img src="imgs/phone.png" class="phone-img" alt="">
@@ -32,9 +71,24 @@
                 </a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="text">
+                <h2>Quem Somos</h2>
+                <p>Somos uma empresa especializada em proteção de dispositivos eletrônicos. Nossos produtos são desenvolvidos com materiais de alta qualidade e durabilidade, garantindo a segurança do seu aparelho.</p>
+            </div>
+            <div class="images">
+                <img src="imgs/phone.png" class="phone2-img" alt="">
+                <img src="imgs/rocks1.png" class="rock3-img" alt="">
+            </div>
+        </div>
+    </section>
 
 
     <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/btn-menu-mobi.js"></script>
 </body>
 </html>
