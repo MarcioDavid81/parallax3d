@@ -6,6 +6,7 @@
 body{
     font-family: sans-serif;
 }
+
 :root{
     --primary-color: #02A0E3;
     --secondary-color: #D1D1D1;
@@ -191,11 +192,11 @@ header.rolar{
     color: var(--secondary-color);
     padding: 5px 0;
     transition: all 0.7s;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
 }
 
 
-/*Estilo do Hero*/
+/* Hero */
 .title{
     font-family: 'Koulen', cursive;
 }
