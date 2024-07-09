@@ -24,7 +24,8 @@ body{
 header{
     width: 100%;
     padding: 20px 0;
-    position: fixed;
+    background-color: #000;
+    position: fixe;/*fixed*/
     top: 0;
     left: 0;
     z-index: 20;
@@ -84,7 +85,7 @@ header .menu-desktop nav ul{
 }
 header .menu-desktop nav ul li{
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 20px;
 }
 header .menu-desktop nav ul li a{
     text-decoration: none;
@@ -120,7 +121,7 @@ header .btn-contato button{
 header .btn-menu-mob{
     display: none;
     position: relative;
-    z-index: 5;
+    z-index: 5001;
 }
 header .btn-menu-mob div{
     height: 3px;
@@ -146,7 +147,7 @@ header .btn-menu-mob .line-menu-mob-2.ativo2{
 header .menu-mobile{
     width: 0;
     height: 0;
-    background-color: var(--text-color);
+    background-color: rgba(255, 255, 255);
     position: absolute;
     top: 0;
     right: 0;
@@ -160,7 +161,7 @@ header .menu-mobile{
 header .menu-mobile.abrir{
     width: 60%;
     height: 100vh;
-    z-index: 1;
+    z-index: 100;
 }
 header .menu-mobile nav ul{
     list-style-type: none;
@@ -237,15 +238,15 @@ header.rolar{
     z-index: 2;
     filter: drop-shadow(10px 10px 15px #000);
 }
-.text{
+.hero .text{
     color: #fff;
 }
 .title{
     font-size: clamp(3em, 7vw, 6em);
     line-height: 1em;
 }
-.text p{
-    color: #8c8c8c;
+.hero .text p{
+    color: #fff;
     line-height: 30px;
     margin: 1em 0;
     font-size: 1.1em;
@@ -301,9 +302,26 @@ section .images img{
 }
 
 
-@media(max-width: 700px){
+
+
+
+@media(width <= 860px){
+    header .menu-desktop, .btn-contato{
+        display: none;
+    }
+    header .btn-menu-mob{
+        display: block;
+        position: relative;
+        z-index: 5000;
+    }
+    header .menu-mobile.abrir{
+        z-index: 4999;
+    }
     .hero .container{
         flex-direction: column;
+    }
+    .hero .text{
+        z-index: 5;
     }
     .images{
         height: 30em;
