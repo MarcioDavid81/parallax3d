@@ -281,6 +281,26 @@ header.rolar{
     color: #fff;
 }
 
+/*Estilo do sobre*/
+section .text h2{
+    font-family: 'Koulen', cursive;
+    font-size: 3em;
+    color: var(--text-color);
+}
+section .text p{
+    font-size: 1.2em;
+    color: var(--text-color);
+    line-height: 30px;
+}
+section .images img{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(10px 10px 15px #000);
+}
+
+
 @media(max-width: 700px){
     .hero .container{
         flex-direction: column;
